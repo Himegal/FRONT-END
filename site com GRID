@@ -27,3 +27,61 @@
     <p>Melhor Site do Mundo</p>
 </footer>
 </html>
+
+
+
+
+CSS
+header {
+    display: flex;                  /* alinha itens lado a lado */
+    justify-content: space-between; /* menu para a direita */
+    align-items: center;            /* Alinha os itens verticalmente ao centro */
+    padding: 20px 5%;               /* Espaçamento interno (cima/baixo e laterais) */
+    background-color: rgb(244, 164, 254);      /* Cor de fundo*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve abaixo do header */
+}
+
+main {
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Duas colunas: menu menor e conteúdo maior*
+    grid-template-rows: auto 1fr auto; /* Três linhas: header, conteúdo principal e
+    footer */
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    gap: 10px;
+    }
+    .header { grid-area: header; }
+    .menu { grid-area: menu; }
+    .main { grid-area: main; }
+    .footer { grid-area: footer; }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+}
+}
+@media (max-width: 480px) {
+    .grid-container {
+    grid-template-columns: Ifr; /* 1 coluna em telas muito pequenas */
+}
+}
+
+footer {
+    background-color: rgb(244, 164, 254);
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
