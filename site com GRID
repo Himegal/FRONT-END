@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Meu cabecalho</h1>
+</header>
+
+<main>
+    <h1>Bem-vindo ao meu site</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIiYGIBSPpLGnqYilYQKH9biSqbk5qnOhHLZDDazxE1A&s=10">
+</main>
+
+<div class="grid-container">
+    <div class="header"></div>
+    <div class="menu"></div>
+    <div class="main"></div>
+    <div class="footer"></div>
+</div>
+</body>
+<footer>
+    <p>Melhor Site do Mundo</p>
+</footer>
+</html>
